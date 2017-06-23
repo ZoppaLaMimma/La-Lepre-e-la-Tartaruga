@@ -92,6 +92,17 @@ int loadGame(array *winners, array *played, players *p, deck * deck)
 {
 	FILE * save;
 	array temp;
+	coord angle1;
+	coord angle2;
+
+	angle1.x = 16;
+	angle1.y = 4;
+
+	angle2.x = 57;
+	angle2.y = 18;
+
+	printStaticsLoadGame();
+	drawSquare( angle1,  angle2);
 
 		if ( (save = fopen("Salvataggio.sav", "rb") ) == NULL ){
 			return 11;
