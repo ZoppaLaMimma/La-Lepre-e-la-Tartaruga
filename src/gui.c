@@ -106,6 +106,25 @@ void printStaticsSettings()
 	GotoXY(0, 23);
 	printf("%s",settings_commands);
 }
+
+void printStaticsLoadGame()
+{
+	int i;
+		GotoXY(25, 1);
+		printf("LA LEPRE E LA TARTARUGA");
+		GotoXY(30, 3);
+		printf(BLU"CARICA PARTITA:"BLACK);
+		GotoXY(0, 23);
+		i = 0;
+		while (i < 80){
+			printf("-");
+			i++;
+		}
+
+		GotoXY(0, 24);
+		printf("%s",settings_load);
+}
+
 void printStatics()
 {
 	int i;
